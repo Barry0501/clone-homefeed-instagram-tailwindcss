@@ -1,12 +1,23 @@
-import React from "react";
 import "./App.css";
+import { CircleAvatar } from "./components/circle_avatar";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline text-slate-600">
-        Hello world!!
-      </h1>
+      <CircleAvatar
+        url={"https://randomuser.me/api/portraits/men/78.jpg"}
+        size={56}
+        onClick={function (): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
+      <CircleAvatar
+        url={"https://randomuser.me/api/portraits/men/79.jpg"}
+        size={24}
+        onClick={function (): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
     </div>
   );
 }
