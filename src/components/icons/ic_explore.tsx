@@ -1,7 +1,7 @@
-export const IconSearch = (): JSX.Element => {
+export const IconExplore = (): JSX.Element => {
   return (
     <svg
-      aria-label="Search"
+      aria-label="Explore"
       color="#262626"
       fill="#262626"
       height="24"
@@ -9,25 +9,28 @@ export const IconSearch = (): JSX.Element => {
       viewBox="0 0 24 24"
       width="24"
     >
-      <path
-        d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z"
+      <polygon
         fill="none"
+        points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
-      ></path>
-      <line
+      ></polygon>
+      <polygon
+        fillRule="evenodd"
+        points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"
+      ></polygon>
+      <circle
+        cx="12.001"
+        cy="12.005"
         fill="none"
+        r="10.5"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
-        x1="16.511"
-        x2="22"
-        y1="16.511"
-        y2="22"
-      ></line>
+      ></circle>
     </svg>
   );
 };

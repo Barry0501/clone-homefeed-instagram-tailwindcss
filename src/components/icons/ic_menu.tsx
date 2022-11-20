@@ -1,7 +1,7 @@
-export const IconSearch = (): JSX.Element => {
+export const IconMenu = (): JSX.Element => {
   return (
     <svg
-      aria-label="Search"
+      aria-label="Settings"
       color="#262626"
       fill="#262626"
       height="24"
@@ -9,24 +9,38 @@ export const IconSearch = (): JSX.Element => {
       viewBox="0 0 24 24"
       width="24"
     >
-      <path
-        d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-      ></path>
       <line
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
-        x1="16.511"
-        x2="22"
-        y1="16.511"
-        y2="22"
+        x1="3"
+        x2="21"
+        y1="4"
+        y2="4"
+      ></line>
+      <line
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        x1="3"
+        x2="21"
+        y1="12"
+        y2="12"
+      ></line>
+      <line
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        x1="3"
+        x2="21"
+        y1="20"
+        y2="20"
       ></line>
     </svg>
   );
