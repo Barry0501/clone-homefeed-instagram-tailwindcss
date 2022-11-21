@@ -1,13 +1,5 @@
-.container_feed {
-  max-width: 470px;
-  margin-right: 32px;
-  background-color: aqua;
-  height: 400px;
-  width: 400px;
-}
-
-.suggestions {
-  max-width: 319px;
-  background-color: blue;
-  height: 300px;
+.layout {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
 }
