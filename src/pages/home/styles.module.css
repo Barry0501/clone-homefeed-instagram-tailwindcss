@@ -1,13 +1,11 @@
 .container_feed {
   max-width: 470px;
   margin-right: 32px;
-  background-color: aqua;
-  height: 400px;
-  width: 400px;
+  width: 100%;
 }
 
 .suggestions {
   max-width: 319px;
-  background-color: blue;
   height: 300px;
+  width: 100%;
 }

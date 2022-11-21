@@ -14,6 +14,7 @@ export const CircleAvatar = ({
             onClick={onClick}
             className="rounded-full border-[1px]"
             alt=""
+            draggable={false}
         />
     );
 };
