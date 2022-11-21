@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
+import Content from "../../layout/content";
 import SideBar from "../../layout/sidebar";
 import styles from "./styles.module.css";
 
@@ -24,7 +25,9 @@ export default function RootPage(): JSX.Element {
         tabActive={tabActive}
         onClickTab={setTabActive}
       />
-      <div>MainLayout / Content</div>
+      <Content>
+        <Outlet />
+      </Content>
     </div>
   );
 }
