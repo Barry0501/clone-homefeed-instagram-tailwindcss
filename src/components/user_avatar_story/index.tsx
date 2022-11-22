@@ -1,5 +1,4 @@
 import { CircleAvatar } from "../circle_avatar";
-import styles from "./styles.module.css";
 
 export default function UserAvatarStory({
   url,

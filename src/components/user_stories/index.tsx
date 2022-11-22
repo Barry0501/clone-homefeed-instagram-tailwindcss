@@ -1,10 +1,18 @@
+import { useRef } from "react";
+import { useDraggable } from "react-use-draggable-scroll";
+
 import { listStories } from "../../common/data/list_stories";
 import UserAvatarStory from "../user_avatar_story";
-import styles from "./styles.module.css";
 
 export default function UserStories(): JSX.Element {
+  const ref = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLDivElement>; // We will use React useRef hook to reference the wrapping div:
+  const { events } = useDraggable(ref); // Now we pass the reference to the useDraggable hook:
+
   return (
-    <div className="mt-6 bg-white border-[1px] rounded-lg whitespace-nowrap overflow-x-hidden">
+    <div className="mt-6 bg-white border-[1px] rounded-lg whitespace-nowrap overflow-x-hidden"
+      {...events}
+      ref={ref}
+      >
       {listStories.map((e, index) => {
         return (
           <div className="py-4 px-[6px] first:pl-3 last:pr-6 cursor-pointer inline-block" key={e.id}>
