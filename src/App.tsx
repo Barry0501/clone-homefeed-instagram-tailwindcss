@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { CircleAvatar } from "./components/circle_avatar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CircleAvatar
+        url={"https://randomuser.me/api/portraits/men/78.jpg"}
+        size={56}
+        onClick={function (): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
+      <CircleAvatar
+        url={"https://randomuser.me/api/portraits/men/79.jpg"}
+        size={24}
+        onClick={function (): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
     </div>
   );
 }
