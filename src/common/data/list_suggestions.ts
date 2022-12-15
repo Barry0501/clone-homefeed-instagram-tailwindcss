@@ -1,6 +1,7 @@
 import { User } from "../models"
 
 export type Suggestion = {
+  id:string;
     user: User;
     type: string;
     isFollowing: boolean;
@@ -8,6 +9,7 @@ export type Suggestion = {
 
 export const listSuggestions: Suggestion[] = [
     {
+      id: "9",
       user: {
         id: "9",
         userName: "#chahcha",
@@ -18,6 +20,7 @@ export const listSuggestions: Suggestion[] = [
       type: "Suggested for you",
     },
     {
+      id: "8",
       user: {
         id: "8",
         userName: "#sancho",
@@ -28,6 +31,7 @@ export const listSuggestions: Suggestion[] = [
       type: "Follows you",
     },
     {
+      id: "7",
       user: {
         id: "7",
         userName: "#case",
@@ -38,6 +42,7 @@ export const listSuggestions: Suggestion[] = [
       type: "Suggested for you",
     },
     {
+      id: "34",
       user: {
         id: "34",
         userName: "#monica",
@@ -48,6 +53,7 @@ export const listSuggestions: Suggestion[] = [
       type: "Suggested for you",
     },
     {
+      id: "94",
       user: {
         id: "94",
         userName: "#holt",

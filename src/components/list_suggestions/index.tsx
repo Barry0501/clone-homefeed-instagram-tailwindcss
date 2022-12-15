@@ -10,6 +10,7 @@ export const ListSuggestion = (): JSX.Element => {
         listSuggestions.map((e) => {
           return (
             <ItemRow
+            key={e.id}
               url={e.user.avatar}
               title={StringUtils.displayUserName(e.user.userName)}
               size={34}

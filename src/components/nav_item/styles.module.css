@@ -11,3 +11,20 @@
   background-color: #fafafa;
   border-radius: 1.5rem;
 }
+
+@media (min-width: 768px) and (max-width: 1263px) {
+  .nav_title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav_title {
+    display: none;
+  }
+  .nav_item {
+    display: inline-block;
+    margin: 0;
+  }
+}
+

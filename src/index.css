@@ -5,6 +5,7 @@
 :root {
   --nav-medium-width: 244px;
   --nav-wide-width: 355px;
+  --nav-narrow-width: 72px;
 }
 
 body {

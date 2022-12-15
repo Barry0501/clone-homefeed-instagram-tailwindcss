@@ -15,6 +15,7 @@ import {
   IconSearch,
   IconSearchActive,
 } from "../../components/icons";
+import { IconInstagramLogo } from "../../components/icons/ic_instagram_logo";
 import { InstagramLogo } from "../../components/images";
 import { MenuAvatar } from "../../components/menu_avatar";
 import NavItem from "../../components/nav_item";
@@ -31,10 +32,17 @@ export default function SideBar({
 
   return (
     <div className={`${styles.sidebar}`}>
-      <div className={`cursor-pointer mb-2 mt-5 px-3 pt-5 pb-4`}>
+      <div
+        className={`${styles.show_logo} cursor-pointer mb-2 mt-5 px-3 pt-5 pb-4`}
+      >
         <InstagramLogo />
       </div>
-      <div className={`grow`}>
+      <div
+        className={`${styles.show_icon_logo} cursor-pointer p-3 my-4 mr-3 hover:bg-[#FAFAFA] hover:rounded-3xl`}
+      >
+        <IconInstagramLogo />
+      </div>
+      <div className={`${styles.navbar} grow`}>
         <NavItem
           icon={<IconHome />}
           activeIcon={<IconHomeActive />}
@@ -42,13 +50,15 @@ export default function SideBar({
           isActive={tabActive === ""}
           onClick={() => onClickTab("")}
         />
-        <NavItem
-          icon={<IconSearch />}
-          activeIcon={<IconSearchActive />}
-          title="Search"
-          isActive={tabActive === "search"}
-          onClick={() => onClickTab("search")}
-        />
+        <div className={`${styles.hide_on_mobile}`}>
+          <NavItem
+            icon={<IconSearch />}
+            activeIcon={<IconSearchActive />}
+            title="Search"
+            isActive={tabActive === "search"}
+            onClick={() => onClickTab("search")}
+          />
+        </div>
         <NavItem
           icon={<IconExplore />}
           activeIcon={<IconExploreActive />}
@@ -87,7 +97,7 @@ export default function SideBar({
           onClick={() => onClickTab("profile")}
         />
       </div>
-      <div className={`mb-6`}>
+      <div className={`${styles.hide_icon_more} mb-6`}>
         <NavItem
           icon={<IconMenu />}
           activeIcon={<IconMenuActive />}
